@@ -1,0 +1,40 @@
+// Following is the given TreeNode structure.
+/**************
+template <typename T>
+class TreeNode {
+public:
+    T data;
+    vector<TreeNode<T>*> children;
+    
+    TreeNode(T data) {
+        this->data = data;
+    }
+    
+    ~TreeNode() {
+        for (int i = 0; i < children.size(); i++) {
+            delete children[i];
+        }
+    }
+    
+};
+***************/
+
+
+void printNodesAtDepthK(TreeNode<int>* root, int k) {
+    /* Don't write main().
+     * Don't read input, it is passed as function argument.
+     * Print output and don't return it.
+     * Taking input and printing output is handled automatically.
+     */
+ if(k==0)
+ {
+   cout<<root->data<<" ";
+ }
+  else{
+    for (int i=0;i < root->children.size();i++)
+  {
+     TreeNode<int> *temp=root->children[i];
+    printNodesAtDepthK(temp,k-1);
+   }
+}
+}
