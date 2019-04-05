@@ -6,7 +6,8 @@ public:
     T data;
     vector<TreeNode<T>*> children;
     
-    TreeNode(T data) {
+    TreeNode(T data)
+    {
         this->data = data;
     }
     
