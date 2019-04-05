@@ -23,9 +23,8 @@ public:
 
 
 int countOfNodes(TreeNode<int>* root)
-{
-    
-    int count=0;
+{   
+  int count=0;
   for (int i=0;i < root->children.size();i++)
   {
     TreeNode<int> *temp=root->children[i];
