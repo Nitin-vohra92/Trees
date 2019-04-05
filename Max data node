@@ -32,7 +32,6 @@ TreeNode<int>* maxDataNode(TreeNode<int>* root)
    }
      
  }
-
   return max;
 }
 
