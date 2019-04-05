@@ -21,8 +21,6 @@ public:
     
 };
 ***************/
-
-
 int countOfNodes(TreeNode<int>* root)
 {   
   int count=0;
