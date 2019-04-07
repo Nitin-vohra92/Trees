@@ -20,17 +20,19 @@ public:
 ***************/
 
 
-void printNodesAtDepthK(TreeNode<int>* root, int k) {
+void printNodesAtDepthK(TreeNode<int>* root, int k)
+{
    
  if(k==0)
  {
    cout<<root->data<<" ";
  }
-  else{
-    for (int i=0;i < root->children.size();i++)
+  else
   {
-     TreeNode<int> *temp=root->children[i];
+    for (int i=0;i < root->children.size();i++)
+   {
+    TreeNode<int> *temp=root->children[i];
     printNodesAtDepthK(temp,k-1);
    }
-}
+  }
 }
