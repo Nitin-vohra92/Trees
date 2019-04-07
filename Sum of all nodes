@@ -21,16 +21,15 @@ public:
 ***************/
 
 
-int sumOfNodes(TreeNode<int>* root) {
-   
-    int sum=0;
+int sumOfNodes(TreeNode<int>* root)
+{
+  int sum=0;
   for (int i=0;i < root->children.size();i++)
   {
     TreeNode<int> *temp=root->children[i];
     int x=sumOfNodes(temp);
     sum+=x;
-    
-  }
+   }
   return sum+root->data;
 }
 
