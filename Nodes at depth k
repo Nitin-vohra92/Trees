@@ -21,11 +21,7 @@ public:
 
 
 void printNodesAtDepthK(TreeNode<int>* root, int k) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Print output and don't return it.
-     * Taking input and printing output is handled automatically.
-     */
+   
  if(k==0)
  {
    cout<<root->data<<" ";
