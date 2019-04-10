@@ -22,10 +22,7 @@ public:
 #include<queue>
 
 void printLevelWise(TreeNode<int>* root) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Print output as specified in the question.
-     */
+  
     queue<TreeNode<int>*>q;
  	q.push(root);
   while(!q.empty())
