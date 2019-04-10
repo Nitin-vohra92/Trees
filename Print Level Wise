@@ -20,13 +20,12 @@ public:
 };
 ***************/
 #include<queue>
-
-void printLevelWise(TreeNode<int>* root) {
-  
+void printLevelWise(TreeNode<int>* root) 
+{ 
     queue<TreeNode<int>*>q;
  	q.push(root);
-  while(!q.empty())
-  {
+    while(!q.empty())
+      {
 
     TreeNode<int> *current=q.front();
     cout<<current->data<<":";
@@ -41,5 +40,5 @@ void printLevelWise(TreeNode<int>* root) {
     }
     cout<<endl;
 
-  }
+     }
 }
