@@ -29,7 +29,8 @@ TreeNode<int> *ans=NULL;
   {
     ans=root;
   }
-  else{
+  else
+  {
     ans=NULL;
   }
   for (int i=0;i < root->children.size();i++)
