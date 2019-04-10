@@ -19,13 +19,9 @@ public:
 };
 ***************/
 
-TreeNode<int>* nextLargerElement(TreeNode<int> *root, int n) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Return output and don't print it.
-     * Taking input and printing output is handled automatically.
-     */
-
+TreeNode<int>* nextLargerElement(TreeNode<int> *root, int n)
+{
+    
 TreeNode<int> *ans=NULL;
  TreeNode<int>* temp1;
   
