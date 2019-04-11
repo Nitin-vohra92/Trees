@@ -39,7 +39,5 @@ void printLevelWise(TreeNode<int>* root)
       q.push(current -> children[i]);
     }
     cout<<endl;
-
-  }
-
+    }
 }
