@@ -32,8 +32,9 @@ void printNodesAtDepthK(TreeNode<int>* root, int k)
     for (int i=0;i < root->children.size();i++)
    {
     TreeNode<int> *temp=root->children[i];
-    printNodesAtDepthK(temp,k-1);
+    printNodesAtDepthK(temp,k-1); 
    }
+   
   }
   
 }
