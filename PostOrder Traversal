@@ -20,11 +20,14 @@
 
 void postOrder(TreeNode<int>* root)
 {
+
    for(int i=0;i<root->children.size();i++)
   {
     TreeNode<int> *temp=root->children[i];
     postOrder(temp);
   }
+  
 cout<<root->data<<" ";
+
 }
 
