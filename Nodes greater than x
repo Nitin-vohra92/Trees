@@ -20,6 +20,7 @@ public:
 ***************/
 
 int count=0;
+
 int nodesGreaterThanX(TreeNode<int> *root, int x)
 {
    
@@ -28,8 +29,11 @@ int nodesGreaterThanX(TreeNode<int> *root, int x)
     TreeNode<int> *temp=root->children[i];
     count=nodesGreaterThanX(temp,x);
   }
-  if(root->data>x)
+
+if(root->data>x)
     return count+1;
-  else
+
+else
     return count;
+    
 } 
