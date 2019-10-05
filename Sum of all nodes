@@ -23,9 +23,11 @@ public:
 int sumOfNodes(TreeNode<int>* root)
 {
   int sum=0;
-  for (int i=0;i < root->children.size();i++)
+ //calling sum of all children
+ for (int i=0;i < root->children.size();i++)
   {
     TreeNode<int> *temp=root->children[i];
+    //recursively finding sum
     int x=sumOfNodes(temp);
     sum+=x;
    }
