@@ -1,5 +1,6 @@
 // Following is the given TreeNode structure.
 /**************
+
 template <typename T>
 class TreeNode {
 public:
@@ -24,16 +25,17 @@ int count=0;
 int nodesGreaterThanX(TreeNode<int> *root, int x)
 {
    
-  for (int i=0;i < root->children.size();i++)
+  for (int i=0;i < root->children.size(); i++)
   {
     TreeNode<int> *temp=root->children[i];
     count=nodesGreaterThanX(temp,x);
   }
-
-if(root->data>x)
+//comparing x with root data
+if(root->data>x){
     return count+1;
+}
 
-else
+else{
     return count;
-    
+    }
 } 
